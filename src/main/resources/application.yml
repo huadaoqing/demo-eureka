@@ -1,0 +1,21 @@
+#端口号
+server:
+  port: 8761
+#Eureka实例名，集群中根据这里相互识别
+spring:
+  application:
+    name: demo-eureka
+
+eureka:
+  server:
+     renewal-percent-threshold: 0.45
+#客户端
+  client:
+    #注册中心地址
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    #是否将该服务注册到eureka上
+    register-with-eureka: false
+    #应用启动后不需要从服务治理服务器中同步已注册得服务列表数据到本地
+    fetch-registry: false
+    

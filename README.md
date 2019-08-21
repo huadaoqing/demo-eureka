@@ -1,2 +1,0 @@
-# demo-eureka
-demo-eureka
